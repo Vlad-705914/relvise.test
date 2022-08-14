@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form">
+      <div class="form-one">
+        <label class="form-label" for=""
+          >Name
+          <span class="form-inner">
+         <svg class="form-icom" width="15" height="15">
+          <use href="./images/sprite.svg#icon-envelope"></use>
+         </svg>
+          </span>
+          <input
+            class="form-imput"
+            type="text"
+            name="name"
+            placeholder="Go name"
+          />
+        </label>
+      </div>
+
+      <div class="form-one">
+        
+        
+          <label class="form-label" for="" >
+           <input
+            class="form-imput"
+            type="text"
+            name="name"
+            placeholder="Go name"
+          />
+              <span class="form-one-icon"></span>
+           <span class="">Name</span> 
+          </label>
+        
+          
+         
+        
+      </div>
+
+      <div class="form-one">
+        <label class="form-label" for=""
+          >Name
+          <input
+            class="form-imput"
+            type="text"
+            name="name"
+            placeholder="Go name"
+          />
+        </label>
+      </div>
+
+      
+      <div role="group" class="form-radio">
+      <ul class="form-radio-list">
+        <li class="form-radio-item">
+            <label class="form-label-radio" for="">
+              <input
+                class="form-imput-radio"
+                type="radio"
+                name="radio"
+                placeholder="Go name"
+              />Name
+            </label>
+            </li>
+      
+        
+     
+             <li class="form-radio-item">
+            <label class="form-label-radio" for="">
+              <input
+                class="form-imput-radio"
+                type="radio"
+                name="radio"
+                placeholder="Go name"
+              />Name
+            </label>
+            </li>
+        
+        
+         
+             <li class="form-radio-item">
+            <label class="form-label-radio" for="">
+              <input
+                class="form-imput-radio"
+                type="radio"
+                name="radio"
+                placeholder="Go name"
+              />Name
+            </label>
+             </li>
+      
+       </ul>
+      </div>
+
+       <div role="group" class="form-radio">
+      <ul class="form-radio-list">
+        <li class="form-radio-item">
+            <label class="form-label-radio" for="">
+              <input
+                class="form-imput-radio"
+                type="checkbox"
+                name="check"
+                placeholder="Go name"
+              />Name
+            </label>
+            </li>
+        
+        
+    
+        <li class="form-radio-item">
+          <label class="form-label-radio" for="">
+            <input
+              class="form-imput-radio"
+              type="checkbox"
+              name="check"
+              placeholder="Go name"
+            />Name
+          </label>
+          </li>
+         
+        
+       
+             <li class="form-radio-item">
+            <label class="form-label-radio" for="">
+              <input
+                class="form-imput-radio"
+                type="checkbox"
+                name="check"
+                placeholder="Go name"
+              />Name
+            </label>
+             </li>
+          
+       </ul>
+       </div>
+      
+       <div class="form-field">
+         <label for="comment">Оставить комментарий</label>
+        <textarea
+          name="comment"
+          id="comment"
+          cols=""
+          rows="10"
+          placeholder="Оставьте комментарий"
+        ></textarea>
+        </div>
+      </div>
+      <input type="checkbox" name="policy">
+      <label for="policy">Соглашаюсь с условиями</label>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector("[data-open-modal]"),
+          closeModalBtn: document.querySelector("[data-close-modal]"),
+          backdrop: document.querySelector("[data-backdrop]"),
+        };
+
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+        reft.backdrop.addEventListener("click", logBackdropClick);
+
+        function toggleModal() {
+          refs.backdrop.classList.toggle("is-hidden");
+        }
+        function logBackdropClick() {
+          console.log("Это клик");
+        }
+      })();
+    </script>
+    <script src="js/mobile-menu.js"></script>
+  </body>
+</html>
