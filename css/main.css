@@ -49,7 +49,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--one-text-color);
-  background-color: var(--one-background);
+  background-color: #EDEDED;
 }
 
 ul {
@@ -216,6 +216,7 @@ img {
 .practic-container {
   padding-left: 195.5px;
   padding-right: 195.5px;
+  background-color: var(--one-background);
 }
 
 .practic-wrapp {
@@ -423,6 +424,7 @@ img {
 .subscride-container {
   outline: 1px solid tomato;
   position: relative;
+  background-color: var(support);
 }
 
 .subscride-section {
@@ -536,6 +538,7 @@ background-image: url(./icon-svg/antenna\ 1\ \(2\).svg);
 .who-container {
   padding-left: 195.5px;
   padding-right: 195.5px;
+  background-color: var(--one-background);
 }
 
 .who-wrapp {
@@ -739,8 +742,7 @@ background-image: url(./icon-svg/antenna\ 1\ \(2\).svg);
 }
 
 .support {
-  padding-left: 195px;
-  padding-right: 195px;
+  background-color: var(--section-background);
 }
 
 .support-section {
@@ -748,6 +750,8 @@ background-image: url(./icon-svg/antenna\ 1\ \(2\).svg);
   outline: 1px solid tomato;
   padding-left: 32px;
   padding-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--section-background);
 }
 
@@ -801,6 +805,12 @@ background-image: url(./icon-svg/antenna\ 1\ \(2\).svg);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
+}
+
+.support-icom-icon {
+  margin-right: 0;
+  width: 329px;
+  height: 393px;
 }
 
 .support-limk {
@@ -917,9 +927,93 @@ background-image: url(./icon-svg/antenna\ 1\ \(2\).svg);
   margin-bottom: 10px;
 }
 
+.footer-container {
+  padding: 50px 0px 50px 0px;
+  background-color: var(--third-background);
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-item {
+  display: flex;
+  width: 148px;
+  flex-direction: column;
+}
+.footer-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-item.right {
+  width: 321px;
+}
+
+.footer-title {
+  line-height: 1.41;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  font-family: "Montserrat";
+  margin-bottom: 20px;
+  color: var(--third-text-color);
+}
+
+.footer-title.title {
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  display: inline-block;
+  line-height: 1.71;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-family: "Montserrat";
+  color: var(--third-text-color);
+}
+.footer-link:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-item-inner {
+  display: inline-block;
+  justify-content: center;
+  width: 280px;
+  height: 29px;
+  align-items: center;
+  outline: 1px solid orange;
+  margin-bottom: 10px;
+}
+
+.footer-inner-link {
+  display: inline-block;
+  line-height: 1.71;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-family: "Montserrat";
+  align-items: center;
+  vertical-align: middle;
+  margin-bottom: 20px;
+  color: var(--third-text-color);
+}
+
+.first-link {
+  margin-bottom: 8px;
+}
+
+.footer-item-icon {
+  display: inline-block;
+  align-items: center;
+  margin-right: 10px;
+}
+
 .consultimg {
   padding-left: 195px;
   padding-right: 195px;
+  background-color: var(--one-background);
 }
 
 .consulting-section {
@@ -976,6 +1070,7 @@ background-image: url(./icon-svg/antenna\ 1\ \(2\).svg);
 
 .designing-container {
   margin-top: 165px;
+  background-color: var(--one-background);
 }
 
 .designing-wrapp {
@@ -1059,6 +1154,56 @@ background-image: url(./icon-svg/antenna\ 1\ \(2\).svg);
 /* 
  * Override or add new styles for blocks on wider screens.
  */
+.socials {
+  background-color: var(--one-background);
+  display: flex;
+  padding-left: 195px;
+  padding-right: 195px;
+}
+
+.socials-secton {
+  min-width: 1050px;
+  max-height: 195px;
+  background-color: var(--one-background);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  outline: 1px solid tomato;
+}
+
+.social-title {
+  line-height: 1.41;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-family: "Montserrat";
+  color: var(--second-text-color);
+}
+
+.socialls-list {
+  display: flex;
+  margin-left: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.sociall-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.sociall-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialls-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .form {
   margin: 30px;
 }

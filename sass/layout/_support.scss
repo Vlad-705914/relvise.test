@@ -64,14 +64,16 @@
 //     outline: 1px solid blue;
 // }
 .support{
-    padding-left: 195px;
-    padding-right: 195px;
+   
+    background-color: var(--section-background);
 }
 .support-section{
     width: 1050px;
     outline: 1px solid tomato;
     padding-left: 32px;
     padding-right: 32px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--section-background);
 }
 .support-title{
@@ -116,6 +118,12 @@ display: block;
     margin-right: auto;
   
     margin-bottom: 15px;
+}
+.support-icom-icon{
+margin-right: 0;
+width: 330px;
+height: 393px;
+
 }
 
 .support-limk{
